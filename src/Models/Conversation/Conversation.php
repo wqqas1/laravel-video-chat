@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpJunior\LaravelVideoChat\Models\Conversation;
+namespace Wqqas1\LaravelVideoChat\Models\Conversation;
 
 use Illuminate\Database\Eloquent\Model;
-use PhpJunior\LaravelVideoChat\Models\Conversation\Relationship\ConversationRelationship;
+use Wqqas1\LaravelVideoChat\Models\Conversation\Relationship\ConversationRelationship;
 
 class Conversation extends Model
 {

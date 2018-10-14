@@ -6,10 +6,10 @@
  * Time: 12:05 AM.
  */
 
-namespace PhpJunior\LaravelVideoChat\Models\Group\Conversation\Relationship;
+namespace Wqqas1\LaravelVideoChat\Models\Group\Conversation\Relationship;
 
-use PhpJunior\LaravelVideoChat\Models\File\File;
-use PhpJunior\LaravelVideoChat\Models\Message\Message;
+use Wqqas1\LaravelVideoChat\Models\File\File;
+use Wqqas1\LaravelVideoChat\Models\Message\Message;
 
 trait GroupConversationRelationship
 {

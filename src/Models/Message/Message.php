@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpJunior\LaravelVideoChat\Models\Message;
+namespace Wqqas1\LaravelVideoChat\Models\Message;
 
 use Illuminate\Database\Eloquent\Model;
-use PhpJunior\LaravelVideoChat\Models\Message\Relationship\MessageRelationship;
+use Wqqas1\LaravelVideoChat\Models\Message\Relationship\MessageRelationship;
 
 class Message extends Model
 {

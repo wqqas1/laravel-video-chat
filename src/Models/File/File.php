@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpJunior\LaravelVideoChat\Models\File;
+namespace Wqqas1\LaravelVideoChat\Models\File;
 
 use Illuminate\Database\Eloquent\Model;
-use PhpJunior\LaravelVideoChat\Models\File\Attribute\FileAttribute;
-use PhpJunior\LaravelVideoChat\Models\File\Relationship\FileRelationship;
+use Wqqas1\LaravelVideoChat\Models\File\Attribute\FileAttribute;
+use Wqqas1\LaravelVideoChat\Models\File\Relationship\FileRelationship;
 
 class File extends Model
 {

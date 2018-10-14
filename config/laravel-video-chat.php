@@ -8,8 +8,8 @@
 
 return [
     'relation' => [
-        'conversations'       => PhpJunior\LaravelVideoChat\Models\Conversation\Conversation::class,
-        'group_conversations' => PhpJunior\LaravelVideoChat\Models\Group\Conversation\GroupConversation::class,
+        'conversations'       => Wqqas1\LaravelVideoChat\Models\Conversation\Conversation::class,
+        'group_conversations' => Wqqas1\LaravelVideoChat\Models\Group\Conversation\GroupConversation::class,
     ],
     'user' => [
         'model' => App\User::class,

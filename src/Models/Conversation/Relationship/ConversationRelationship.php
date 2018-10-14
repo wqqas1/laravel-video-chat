@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpJunior\LaravelVideoChat\Models\Conversation\Relationship;
+namespace Wqqas1\LaravelVideoChat\Models\Conversation\Relationship;
 
-use PhpJunior\LaravelVideoChat\Models\File\File;
-use PhpJunior\LaravelVideoChat\Models\Message\Message;
+use Wqqas1\LaravelVideoChat\Models\File\File;
+use Wqqas1\LaravelVideoChat\Models\Message\Message;
 
 /**
  * Created by PhpStorm.

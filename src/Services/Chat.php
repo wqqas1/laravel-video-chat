@@ -1,10 +1,10 @@
 <?php
 
-namespace PhpJunior\LaravelVideoChat\Services;
+namespace Wqqas1\LaravelVideoChat\Services;
 
 use Illuminate\Contracts\Config\Repository;
-use PhpJunior\LaravelVideoChat\Repositories\Conversation\ConversationRepository;
-use PhpJunior\LaravelVideoChat\Repositories\GroupConversation\GroupConversationRepository;
+use Wqqas1\LaravelVideoChat\Repositories\Conversation\ConversationRepository;
+use Wqqas1\LaravelVideoChat\Repositories\GroupConversation\GroupConversationRepository;
 
 class Chat
 {

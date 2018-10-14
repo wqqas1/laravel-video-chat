@@ -6,7 +6,7 @@
  * Time: 3:09 PM.
  */
 
-namespace PhpJunior\LaravelVideoChat\Services;
+namespace Wqqas1\LaravelVideoChat\Services;
 
 use Dflydev\ApacheMimeTypes\PhpRepository;
 use Illuminate\Support\Facades\Storage;

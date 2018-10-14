@@ -6,10 +6,10 @@
  * Time: 1:20 AM.
  */
 
-namespace PhpJunior\LaravelVideoChat\Tests;
+namespace Wqqas1\LaravelVideoChat\Tests;
 
 use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
-use PhpJunior\LaravelVideoChat\Services\Chat;
+use Wqqas1\LaravelVideoChat\Services\Chat;
 
 class LaravelVideoChatServiceProviderTest extends TestCase
 {

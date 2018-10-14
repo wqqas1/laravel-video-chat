@@ -1,16 +1,16 @@
 <?php
 
-namespace PhpJunior\LaravelVideoChat;
+namespace Wqqas1\LaravelVideoChat;
 
 use Dflydev\ApacheMimeTypes\PhpRepository;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Facades\Broadcast;
 use Illuminate\Support\ServiceProvider;
-use PhpJunior\LaravelVideoChat\Facades\Chat;
-use PhpJunior\LaravelVideoChat\Repositories\Conversation\ConversationRepository;
-use PhpJunior\LaravelVideoChat\Repositories\GroupConversation\GroupConversationRepository;
-use PhpJunior\LaravelVideoChat\Services\Chat as ChatService;
-use PhpJunior\LaravelVideoChat\Services\UploadManager;
+use Wqqas1\LaravelVideoChat\Facades\Chat;
+use Wqqas1\LaravelVideoChat\Repositories\Conversation\ConversationRepository;
+use Wqqas1\LaravelVideoChat\Repositories\GroupConversation\GroupConversationRepository;
+use Wqqas1\LaravelVideoChat\Services\Chat as ChatService;
+use Wqqas1\LaravelVideoChat\Services\UploadManager;
 
 class LaravelVideoChatServiceProvider extends ServiceProvider
 {

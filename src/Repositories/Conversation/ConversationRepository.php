@@ -1,14 +1,14 @@
 <?php
 
-namespace PhpJunior\LaravelVideoChat\Repositories\Conversation;
+namespace Wqqas1\LaravelVideoChat\Repositories\Conversation;
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\File;
-use PhpJunior\LaravelVideoChat\Events\NewConversationMessage;
-use PhpJunior\LaravelVideoChat\Events\VideoChatStart;
-use PhpJunior\LaravelVideoChat\Models\Conversation\Conversation;
-use PhpJunior\LaravelVideoChat\Repositories\BaseRepository;
-use PhpJunior\LaravelVideoChat\Services\UploadManager;
+use Wqqas1\LaravelVideoChat\Events\NewConversationMessage;
+use Wqqas1\LaravelVideoChat\Events\VideoChatStart;
+use Wqqas1\LaravelVideoChat\Models\Conversation\Conversation;
+use Wqqas1\LaravelVideoChat\Repositories\BaseRepository;
+use Wqqas1\LaravelVideoChat\Services\UploadManager;
 
 class ConversationRepository extends BaseRepository
 {

@@ -5,8 +5,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Nyi Nyi Lwin",
-            "email": "nyinyilwin1992@hotmail.com"
+            "name": "Waqas Ahmad",
+            "email": "wqqas1978@gmail.com"
         }
     ],
     "keywords": [
@@ -27,7 +27,7 @@
     },
     "autoload": {
         "psr-4": {
-            "PhpJunior\\LaravelVideoChat\\": "src/"
+            "Wqqas1\\LaravelVideoChat\\": "src/"
         },
         "files": [
             "helper/helpers.php"
@@ -35,16 +35,16 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "PhpJunior\\LaravelVideoChat\\Tests\\": "tests/"
+            "Wqqas1\\LaravelVideoChat\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "PhpJunior\\LaravelVideoChat\\LaravelVideoChatServiceProvider"
+                "Wqqas1\\LaravelVideoChat\\LaravelVideoChatServiceProvider"
             ],
             "aliases": {
-                "Chat": "PhpJunior\\LaravelVideoChat\\Facades\\Chat"
+                "Chat": "Wqqas1\\LaravelVideoChat\\Facades\\Chat"
             }
         }
     },

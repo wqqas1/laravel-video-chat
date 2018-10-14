@@ -6,14 +6,14 @@
  * Time: 11:27 PM.
  */
 
-namespace PhpJunior\LaravelVideoChat\Repositories\GroupConversation;
+namespace Wqqas1\LaravelVideoChat\Repositories\GroupConversation;
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\File;
-use PhpJunior\LaravelVideoChat\Events\NewGroupConversationMessage;
-use PhpJunior\LaravelVideoChat\Models\Group\Conversation\GroupConversation;
-use PhpJunior\LaravelVideoChat\Repositories\BaseRepository;
-use PhpJunior\LaravelVideoChat\Services\UploadManager;
+use Wqqas1\LaravelVideoChat\Events\NewGroupConversationMessage;
+use Wqqas1\LaravelVideoChat\Models\Group\Conversation\GroupConversation;
+use Wqqas1\LaravelVideoChat\Repositories\BaseRepository;
+use Wqqas1\LaravelVideoChat\Services\UploadManager;
 
 class GroupConversationRepository extends BaseRepository
 {

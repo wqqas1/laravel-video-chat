@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpJunior\LaravelVideoChat\Facades;
+namespace Wqqas1\LaravelVideoChat\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

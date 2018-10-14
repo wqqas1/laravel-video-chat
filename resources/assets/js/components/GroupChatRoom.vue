@@ -118,7 +118,7 @@
                     .here((users) => {
                         console.log(users)
                     })
-                    .listen('\\PhpJunior\\LaravelVideoChat\\Events\\NewGroupConversationMessage', (data) => {
+                    .listen('\\Wqqas1\\LaravelVideoChat\\Events\\NewGroupConversationMessage', (data) => {
                         var self = this;
                         if ( data.files.length > 0 ){
                             $.each( data.files , function( key, value ) {

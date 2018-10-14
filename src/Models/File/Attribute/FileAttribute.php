@@ -6,7 +6,7 @@
  * Time: 7:48 AM.
  */
 
-namespace PhpJunior\LaravelVideoChat\Models\File\Attribute;
+namespace Wqqas1\LaravelVideoChat\Models\File\Attribute;
 
 trait FileAttribute
 {

@@ -6,9 +6,9 @@
  * Time: 10:54 PM.
  */
 
-namespace PhpJunior\LaravelVideoChat\Models\File\Relationship;
+namespace Wqqas1\LaravelVideoChat\Models\File\Relationship;
 
-use PhpJunior\LaravelVideoChat\Models\Message\Message;
+use Wqqas1\LaravelVideoChat\Models\Message\Message;
 
 trait FileRelationship
 {
