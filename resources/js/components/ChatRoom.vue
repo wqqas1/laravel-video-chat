@@ -12,13 +12,13 @@
                     </div>
                     <div class="panel-body">
                         <ul class="chat" v-chat-scroll>
-                            <li class="clearfix" v-for="message in messages" v-bind:class="{ 'right' : check(message.sender.id), 'left' : !check(message.sender.id) }">
+                            <li class="clearfix" :key="message.id" v-for="message in messages" v-bind:class="{ 'right' : check(message.sender.id), 'left' : !check(message.sender.id) }">
                             <span class="chat-img" v-bind:class="{ 'pull-right' : check(message.sender.id) , 'pull-left' : !check(message.sender.id) }">
                                 <img :src="'http://placehold.it/50/FA6F57/fff&text='+ message.sender.name" alt="User Avatar" class="img-circle" />
                             </span>
                                 <div class="chat-body clearfix">
                                     <div class="header">
-                                        <small class=" text-muted"><span class="glyphicon glyphicon-time"></span><timeago :since="message.created_at" :auto-update="10"></timeago></small>
+                                        <small class=" text-muted"><span class="glyphicon glyphicon-time"></span><timeago :datetime="message.created_at" :auto-update="10"></timeago></small>
                                         <strong v-bind:class="{ 'pull-right' : check(message.sender.id) , 'pull-left' : !check(message.sender.id)}" class="primary-font">
                                             {{ message.sender.name }}
                                         </strong>
@@ -43,7 +43,7 @@
                         </span>
                         </div>
                         <div class="input-group">
-                            <input type="file" multiple class="form-control">
+                            <input @change="prepareUpload" type="file" multiple class="form-control">
                             <span class="input-group-btn">
                             <button class="btn btn-warning btn-sm" type="button" @click.prevent="sendFiles()">
                                 Send Files
@@ -67,7 +67,7 @@
                             <h4 class="modal-title">Incoming Call</h4>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" id="answerCallButton" class="btn btn-success">Answer</button>
+                            <button type="button" @click="answerCall" id="answerCallButton" class="btn btn-success">Answer</button>
                             <button type="button" id="denyCallButton" data-dismiss="modal" class="btn btn-danger">Deny</button>
                         </div>
                     </div>
@@ -86,11 +86,6 @@
     $(function () {
         var localVideo = document.getElementById('localVideo');
         var remoteVideo = document.getElementById('remoteVideo');
-        var answerButton = document.getElementById('answerCallButton');
-
-        answerButton.onclick = answerCall;
-
-        $('input[type=file]').on('change', prepareUpload);
     });
 
     var files;
@@ -147,6 +142,16 @@
                 }).then((response) => {
                     this.text = '';
                 });
+            },
+            answerCall() {
+                isCaller = false;
+                luid = Cookies.get('uuid');
+                ruid = Cookies.get('remoteUUID');
+                $('#incomingVideoCallModal').modal('hide');
+                start()
+            },
+            prepareUpload(event) {
+                files = event.target.files;
             },
             sendFiles() {
                 var data = new FormData();
@@ -267,14 +272,6 @@
     function onSignalOffer(offer){
         Cookies.set('offer', offer);
         $('#incomingVideoCallModal').modal('show');
-    }
-
-    function answerCall() {
-        isCaller = false;
-        luid = Cookies.get('uuid');
-        ruid = Cookies.get('remoteUUID');
-        $('#incomingVideoCallModal').modal('hide');
-        start()
     }
 
     function gotStream(stream) {
@@ -464,11 +461,6 @@
     function trace(arg) {
         var now = (window.performance.now() / 1000).toFixed(3);
         console.log(now + ': ', arg);
-    }
-
-    function prepareUpload(event)
-    {
-        files = event.target.files;
     }
 </script>
 

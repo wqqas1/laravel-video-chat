@@ -1,6 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
 /.idea/
-
+dump.rdb
 /vendor/
 composer.lock
 node_modules

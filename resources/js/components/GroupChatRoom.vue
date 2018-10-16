@@ -18,7 +18,7 @@
                             </span>
                                 <div class="chat-body clearfix">
                                     <div class="header">
-                                        <small class=" text-muted"><span class="glyphicon glyphicon-time"></span><timeago :since="message.created_at" :auto-update="10"></timeago></small>
+                                        <small class=" text-muted"><span class="glyphicon glyphicon-time"></span><timeago :datetime="message.created_at" :auto-update="10"></timeago></small>
                                         <strong v-bind:class="{ 'pull-right' : check(message.sender.id) , 'pull-left' : !check(message.sender.id)}" class="primary-font">
                                             {{ message.sender.name }}
                                         </strong>
