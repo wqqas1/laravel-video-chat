@@ -94,7 +94,7 @@ Finally, you will need to run a compatible Socket.IO server. Use
 [tlaverdure/laravel-echo-server](https://github.com/tlaverdure/laravel-echo-server) GitHub repository.
 
 
-In `resources/assets/js/app.js` file:
+In `resources/js/app.js` file:
 
 ```vuejs
  import VueChatScroll from 'vue-chat-scroll';
@@ -281,4 +281,4 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 [Demo Project](https://github.com/Wqqas1/laravel-video-chat-demo)
 
-This whole work is based on https://github.com/PHPJunior/laravel-video-chat but modified to meet the needs you can download the original package or use this one.
+This whole work is based on https://github.com/PHPJunior/laravel-video-chat but modified to make it compatible with laravel 5.7 this version does not work with laravel versions less than 5.7 for that you can download the original package

@@ -12,7 +12,7 @@
                     </div>
                     <div class="panel-body">
                         <ul class="chat" v-chat-scroll>
-                            <li class="clearfix" v-for="message in messages" v-bind:class="{ 'right' : check(message.sender.id), 'left' : !check(message.sender.id) }">
+                            <li class="clearfix" v-for="message in messages" :key="message.id" :class="{ 'right' : check(message.sender.id), 'left' : !check(message.sender.id) }">
                             <span class="chat-img" v-bind:class="{ 'pull-right' : check(message.sender.id) , 'pull-left' : !check(message.sender.id) }">
                                 <img :src="'http://placehold.it/50/FA6F57/fff&text='+ message.sender.name" alt="User Avatar" class="img-circle" />
                             </span>

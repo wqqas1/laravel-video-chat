@@ -18,12 +18,12 @@
         "webrtc"
     ],
     "require": {
-        "php" : ">=7.0",
+        "php" : ">=7.1",
         "predis/predis": "^1.1",
         "dflydev/apache-mime-types": "^1.0",
-        "illuminate/support": "^5.5",
-        "illuminate/database": "^5.5",
-        "illuminate/contracts": "^5.5"
+        "illuminate/support": "^5.7",
+        "illuminate/database": "^5.7",
+        "illuminate/contracts": "^5.7"
     },
     "autoload": {
         "psr-4": {
@@ -49,7 +49,7 @@
         }
     },
     "require-dev": {
-        "phpunit/phpunit": "^6.4",
+        "phpunit/phpunit": "^7.0",
         "graham-campbell/testbench": "^4.0"
     }
 }
