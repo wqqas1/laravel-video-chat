@@ -280,3 +280,5 @@ Chat::sendFilesInGroupConversation($groupConversationId , $request->file('files'
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
 [Demo Project](https://github.com/Wqqas1/laravel-video-chat-demo)
+
+This whole work is based on https://github.com/PHPJunior/laravel-video-chat but modified to meet the needs you can download the original package or use this one.
