@@ -1,5 +1,5 @@
 {
-    "name": "php-junior/laravel-video-chat",
+    "name": "wqqas1/laravel-video-chat",
     "description": "Laravel Video Chat using Socket.IO and WebRTC",
     "type": "library",
     "license": "MIT",

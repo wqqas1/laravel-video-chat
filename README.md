@@ -1,14 +1,10 @@
 # Laravel Video Chat
 Laravel Video Chat using Socket.IO and WebRTC
 
-[![Build Status](https://travis-ci.org/Wqqas1/laravel-video-chat.svg?branch=master)](https://travis-ci.org/Wqqas1/laravel-video-chat)
-[![StyleCI](https://styleci.io/repos/107812103/shield?branch=master)](https://styleci.io/repos/107812103)
-[![Latest Stable Version](https://poser.pugx.org/php-junior/laravel-video-chat/v/stable)](https://packagist.org/packages/php-junior/laravel-video-chat)
-[![Total Downloads](https://poser.pugx.org/php-junior/laravel-video-chat/downloads)](https://packagist.org/packages/php-junior/laravel-video-chat)
 
 ## Installation
 ```php
-composer require php-junior/laravel-video-chat
+composer require wqqas1/laravel-video-chat
 ```
 
 Laravel 5.5 uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider.
@@ -284,8 +280,3 @@ Chat::sendFilesInGroupConversation($groupConversationId , $request->file('files'
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
 [Demo Project](https://github.com/Wqqas1/laravel-video-chat-demo)
-
-## Support on Beerpay
-Hey dude! Help me out for a couple of :beers:!
-
-[![Beerpay](https://beerpay.io/Wqqas1/laravel-video-chat/badge.svg?style=beer-square)](https://beerpay.io/Wqqas1/laravel-video-chat)  [![Beerpay](https://beerpay.io/Wqqas1/laravel-video-chat/make-wish.svg?style=flat-square)](https://beerpay.io/Wqqas1/laravel-video-chat?focus=wish)
