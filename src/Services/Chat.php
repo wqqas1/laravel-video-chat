@@ -44,6 +44,12 @@ class Chat
         return $this->conversation->getAllConversations($this->userId);
     }
 
+
+    public function getAllConversationsWithMessages($user_id, $user_id2)
+    {
+        return $this->conversation->getAllConversationsWithMessages($user_id, $user_id2);
+    }
+
     /**
      * @param $conversationId
      *

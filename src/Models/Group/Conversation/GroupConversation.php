@@ -3,11 +3,15 @@
 namespace Wqqas1\LaravelVideoChat\Models\Group\Conversation;
 
 use Illuminate\Database\Eloquent\Model;
+
+use Mpociot\Firebase\SyncsWithFirebase;
+
 use Wqqas1\LaravelVideoChat\Models\Group\Conversation\Relationship\GroupConversationRelationship;
 
 class GroupConversation extends Model
 {
     use GroupConversationRelationship;
+    use SyncsWithFirebase;
 
     protected $table;
 

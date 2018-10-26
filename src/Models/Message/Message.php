@@ -3,11 +3,15 @@
 namespace Wqqas1\LaravelVideoChat\Models\Message;
 
 use Illuminate\Database\Eloquent\Model;
+
+use Mpociot\Firebase\SyncsWithFirebase;
+
 use Wqqas1\LaravelVideoChat\Models\Message\Relationship\MessageRelationship;
 
 class Message extends Model
 {
     use MessageRelationship;
+    use SyncsWithFirebase;
 
     protected $table;
 

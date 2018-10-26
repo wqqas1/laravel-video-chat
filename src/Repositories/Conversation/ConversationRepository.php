@@ -54,6 +54,35 @@ class ConversationRepository extends BaseRepository
         return collect($threads);
     }
 
+
+    public function getAllConversationsWithMessages($userFirst, $userSecond)
+    {
+
+        /*$conversations = $this->query()->with(['messages' => function ($query) {
+            return $query->latest();
+        }, 'firstUser', 'secondUser'])->where('first_user_id', $userFirst)->orWhere('second_user_id', $userFirst)->get();*/
+        //dd($userFirst);
+        $conversations = $this->query()->where([['first_user_id', '=',$userFirst] , ['second_user_id','=',$userSecond]])->orWhere([['first_user_id', '=',$userSecond] , ['second_user_id','=',$userFirst]])->get();
+
+        //$threads = [];
+        //dd($conversations);
+        $collection = (object) null;
+        $collection->conversationId = $conversations[0]->id;
+        $collection->channel_name = 'chat-room-1';
+        $collection->user = ($conversations[0]->firstUser->id == $userFirst) ? $conversations[0]->secondUser : $conversations[0]->firstUser;
+        foreach ($conversations as $conversation) {
+            $messages = $this->getConversationMessagesOnly($conversation->id);
+            foreach($messages as $message){
+                //$message->push();
+                $collection->messages[] = $message;
+            }
+
+
+        }
+
+        return collect($collection);
+    }
+
     /**
      * @param $user
      * @param $conversation

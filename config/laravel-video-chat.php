@@ -30,4 +30,5 @@ return [
     'upload' => [
         'storage' => 'public',
     ],
+    'syncFirebase' => false
 ];

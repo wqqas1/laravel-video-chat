@@ -3,12 +3,16 @@
 namespace Wqqas1\LaravelVideoChat\Models\File;
 
 use Illuminate\Database\Eloquent\Model;
+
+use Mpociot\Firebase\SyncsWithFirebase;
+
 use Wqqas1\LaravelVideoChat\Models\File\Attribute\FileAttribute;
 use Wqqas1\LaravelVideoChat\Models\File\Relationship\FileRelationship;
 
 class File extends Model
 {
     use FileRelationship,FileAttribute;
+    use SyncsWithFirebase;
 
     protected $table;
 
