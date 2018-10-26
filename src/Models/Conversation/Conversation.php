@@ -31,6 +31,8 @@ class Conversation extends Model
     }
 
     public function Booking(){
-        return $this->belongsTo(Booking::class, 'booking_id');
+        if(class_exists('Booking')){
+            return $this->belongsTo(Booking::class, 'booking_id');
+        }
     }
 }
