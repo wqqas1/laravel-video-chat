@@ -122,7 +122,12 @@ class ConversationRepository extends BaseRepository
 
         return collect($collection);
     }
+    public function getConversationMessagesOnly($conversationId)
+    {
+        $conversation = $this->query()->with(['messages', 'messages.sender', 'messages.files', 'firstUser', 'secondUser', 'files'])->find($conversationId);
 
+        return collect($conversation->messages);
+    }
     /**
      * @param $conversationId
      * @param array $data
@@ -188,6 +193,7 @@ class ConversationRepository extends BaseRepository
      *
      * @return bool
      */
+
     public function checkUserExist($userId, $conversationId)
     {
         $thread = $this->find($conversationId);
