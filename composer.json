@@ -19,7 +19,7 @@
     ],
     "require": {
         "php" : ">=7.1",
-        "predis/predis": "^1.1",
+        "predis/predis": "^1.1 || ^2.0",
         "dflydev/apache-mime-types": "^1.0",
         "illuminate/support": "^6.2",
         "illuminate/database": "^6.2",
